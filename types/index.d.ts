@@ -234,6 +234,6 @@ declare module 'engine-blackjack-ts' {
     export namespace presets {
         function defaultState(rules: Rule): State;
         function getDefaultSideBets(active?: boolean): SideBets;
-        function getRules(): Rule;
+        function getRules(overrides?: Rule): Rule;
     }
 }
