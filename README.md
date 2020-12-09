@@ -1,4 +1,4 @@
-**Note**: This is a fork of `engine-blackjack-ts`, created to add the typescript annotations to the npm package.
+**Note**: This is a fork of [`engine-blackjack`](https://github.com/kedoska/engine-blackjack) (which appears to be dead), created to add the typescript annotations to the npm package.
 
 <p align="center">
     <img src="https://cloud.githubusercontent.com/assets/11739105/19564224/62fd8836-96a8-11e6-97ea-6d31464eb316.png" alt="engine-blackjack-ts" style="max-width:100%;">
