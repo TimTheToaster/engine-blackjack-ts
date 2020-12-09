@@ -1,4 +1,4 @@
-declare module 'engine-blackjack' {
+declare module 'engine-blackjack-ts' {
     interface ActionPayload {
         bet?: number;
         position?: 'right' | 'left';
@@ -10,17 +10,17 @@ declare module 'engine-blackjack' {
 
     interface Action {
         type:
-            | 'RESTORE'
-            | 'DEAL'
-            | 'INSURANCE'
-            | 'SPLIT'
-            | 'HIT'
-            | 'DOUBLE'
-            | 'STAND'
-            | 'SURRENDER'
-            | 'SHOWDOWN'
-            | 'DEALER-HIT'
-            | 'INVALID';
+        | 'RESTORE'
+        | 'DEAL'
+        | 'INSURANCE'
+        | 'SPLIT'
+        | 'HIT'
+        | 'DOUBLE'
+        | 'STAND'
+        | 'SURRENDER'
+        | 'SHOWDOWN'
+        | 'DEALER-HIT'
+        | 'INVALID';
         payload?: ActionPayload;
     }
 
@@ -35,19 +35,19 @@ declare module 'engine-blackjack' {
 
     interface Card {
         text:
-            | 'A'
-            | '2'
-            | '3'
-            | '4'
-            | '5'
-            | '6'
-            | '7'
-            | '8'
-            | '9'
-            | '10'
-            | 'J'
-            | 'Q'
-            | 'K';
+        | 'A'
+        | '2'
+        | '3'
+        | '4'
+        | '5'
+        | '6'
+        | '7'
+        | '8'
+        | '9'
+        | '10'
+        | 'J'
+        | 'Q'
+        | 'K';
         suite: 'hearts' | 'diamonds' | 'clubs' | 'spades';
         value: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 10;
         color: 'R' | 'B';
@@ -112,12 +112,12 @@ declare module 'engine-blackjack' {
         wonOnRight: number;
         wonOnLeft: number;
         stage:
-            | 'STAGE_READY'
-            | 'STAGE_PLAYER_TURN_RIGHT'
-            | 'STAGE_PLAYER_TURN_LEFT'
-            | 'STAGE_SHOWDOWN'
-            | 'STAGE_DEALER_TURN'
-            | 'STAGE_DONE';
+        | 'STAGE_READY'
+        | 'STAGE_PLAYER_TURN_RIGHT'
+        | 'STAGE_PLAYER_TURN_LEFT'
+        | 'STAGE_SHOWDOWN'
+        | 'STAGE_DEALER_TURN'
+        | 'STAGE_DONE';
         deck: Card[];
         handInfo: HandInfo;
         history: HistoryItem[];

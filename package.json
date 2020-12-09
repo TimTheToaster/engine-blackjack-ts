@@ -1,6 +1,6 @@
 {
   "name": "engine-blackjack-ts",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "NodeJs, single player, blackjack engine",
   "main": "build/index.js",
   "types": "types/index.d.ts",

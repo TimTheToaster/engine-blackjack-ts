@@ -1,15 +1,15 @@
-**Note**: This is a fork of `engine-blackjack`, created to add the typescript annotations to the npm package.
+**Note**: This is a fork of `engine-blackjack-ts`, created to add the typescript annotations to the npm package.
 
 <p align="center">
-    <img src="https://cloud.githubusercontent.com/assets/11739105/19564224/62fd8836-96a8-11e6-97ea-6d31464eb316.png" alt="engine-blackjack" style="max-width:100%;">
+    <img src="https://cloud.githubusercontent.com/assets/11739105/19564224/62fd8836-96a8-11e6-97ea-6d31464eb316.png" alt="engine-blackjack-ts" style="max-width:100%;">
 </p>
 <p align="center">
-  engine-blackjack - implement blackjack game into your software.
+  engine-blackjack-ts - implement blackjack game into your software.
 </p>
 <p align="center">
-<a href="https://travis-ci.org/kedoska/engine-blackjack"><img src="https://travis-ci.org/kedoska/engine-blackjack.svg" alt="build:"></a>
-<a href="https://david-dm.org/kedoska/engine-blackjack/"><img src="https://david-dm.org/kedoska/engine-blackjack/status.svg" alt="Dependency Status"></a>
-<a href="https://david-dm.org/kedoska/engine-blackjack/?type=dev"><img src="https://david-dm.org/kedoska/engine-blackjack/dev-status.svg" alt="devDependency Status"></a>
+<a href="https://travis-ci.org/kedoska/engine-blackjack-ts"><img src="https://travis-ci.org/kedoska/engine-blackjack-ts.svg" alt="build:"></a>
+<a href="https://david-dm.org/kedoska/engine-blackjack-ts/"><img src="https://david-dm.org/kedoska/engine-blackjack-ts/status.svg" alt="Dependency Status"></a>
+<a href="https://david-dm.org/kedoska/engine-blackjack-ts/?type=dev"><img src="https://david-dm.org/kedoska/engine-blackjack-ts/dev-status.svg" alt="devDependency Status"></a>
 </p>
 ___
 
@@ -44,8 +44,8 @@ Here a list of direct (and maybe exotic) requests:
 
 If you are using [npm](https://www.npmjs.com/), to get the last version:
 
- * `yarn add engine-blackjack`
- * `npm install engine-blackjack`
+ * `yarn add engine-blackjack-ts`
+ * `npm install engine-blackjack-ts`
 
 I'm currently publishing the master branch into NPM until I get the first _tag_.
 Ideally, only _tagged commits_ will be uploaded as NPM after that moment.
@@ -57,7 +57,7 @@ NOTE: Master branch is under development. Be sure to "ONLY" use tagged version f
 Once obtained the library just _require_ `Game` and `actions`. 
 
 ```
-const blackjack = require('engine-blackjack')
+const blackjack = require('engine-blackjack-ts')
 const actions = blackjack.actions
 const Game = blackjack.Game
 ```
@@ -183,7 +183,7 @@ NOTE: If you are interested in the random components, check out the `shuffle()` 
 
 Run tests by calling `yarn test ` or `npm test`
 
-You can also write specific test cases using this syntax. For more details have a look at [game.spec.js](https://github.com/kedoska/engine-blackjack/blob/master/test/game.spec.js) 
+You can also write specific test cases using this syntax. For more details have a look at [game.spec.js](https://github.com/kedoska/engine-blackjack-ts/blob/master/test/game.spec.js) 
 
 ```
 {
@@ -241,7 +241,7 @@ Engine will calculate the side bet result during the `deal()`
 
 # License
 
-engine-blackjack
+engine-blackjack-ts
 Copyright (C) 2016 Marco Casula
 
 This program is free software; you can redistribute it and/or modify
