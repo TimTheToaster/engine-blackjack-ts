@@ -1,5 +1,5 @@
 {
-  "name": "engine-blackjack",
+  "name": "engine-blackjack-ts",
   "version": "0.9.2",
   "description": "NodeJs, single player, blackjack engine",
   "main": "build/index.js",
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kedoska/engine-blackjack"
+    "url": "https://github.com/TimTheToaster/engine-blackjack-ts"
   },
   "bugs": {
-    "url": "https://github.com/kedoska/engine-blackjack/issues"
+    "url": "https://github.com/TimTheToaster/engine-blackjack-ts/issues"
   },
   "keywords": [
     "nodejs",
