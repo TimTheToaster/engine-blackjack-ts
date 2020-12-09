@@ -150,7 +150,7 @@ declare module 'engine-blackjack-ts' {
     }
 
     export namespace actions {
-        function deal(options?: { bet: number; sideBets: SideBetsInfo }): Action;
+        function deal(options?: { bet: number; sideBets?: SideBetsInfo }): Action;
         // function dealerHit(options?: { dealerHoleCard: Card }): Action;
         function hit(options?: { position: 'right' | 'left' }): Action;
         function insurance(options?: { bet: number }): Action;
