@@ -42,7 +42,7 @@ export const getRules = ({
   surrender = true,
   insurance = true,
   showdownAfterAceSplit = true
-}: Rule = {}) => {
+}: Partial<Rule> = {}) => {
   return {
     decks: decks || 1,
     standOnSoft17: standOnSoft17,
