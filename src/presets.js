@@ -1,9 +1,5 @@
 // @flow
 /*!
-import { newDecks, shuffle } from '52-deck';
-
-import * as TYPES from './constants';
-
  engine-blackjack
  Copyright (C) 2016 Marco Casula
 
@@ -20,7 +16,9 @@ import * as TYPES from './constants';
  with this program; if not, write to the Free Software Foundation, Inc.,
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
+import { newDecks, shuffle } from '52-deck';
 import type { SideBets, Rule, State } from './types'
+import * as TYPES from './constants'
 
 export const getDefaultSideBets = (active: boolean = false): SideBets => {
   return {
