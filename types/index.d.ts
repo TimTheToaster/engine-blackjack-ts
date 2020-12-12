@@ -1,3 +1,20 @@
+import type {
+    STAGE_READY,
+    STAGE_PLAYER_TURN_RIGHT,
+    STAGE_PLAYER_TURN_LEFT,
+    STAGE_SHOWDOWN,
+    STAGE_DEALER_TURN,
+    STAGE_DONE,
+} from '../src/constants'
+
+export const STAGE_READY: string = 'ready'
+export const STAGE_PLAYER_TURN_RIGHT: string = 'player-turn-right'
+export const STAGE_PLAYER_TURN_LEFT: string = 'player-turn-left'
+export const STAGE_SHOWDOWN: string = 'showdown'
+export const STAGE_DEALER_TURN: string = 'dealer-turn'
+export const STAGE_DONE: string = 'done'
+
+
 declare module 'engine-blackjack-ts' {
     interface ActionPayload {
         bet?: number;
@@ -112,12 +129,12 @@ declare module 'engine-blackjack-ts' {
         wonOnRight: number;
         wonOnLeft: number;
         stage:
-        | 'STAGE_READY'
-        | 'STAGE_PLAYER_TURN_RIGHT'
-        | 'STAGE_PLAYER_TURN_LEFT'
-        | 'STAGE_SHOWDOWN'
-        | 'STAGE_DEALER_TURN'
-        | 'STAGE_DONE';
+        | STAGE_READY
+        | STAGE_PLAYER_TURN_RIGHT
+        | STAGE_PLAYER_TURN_LEFT
+        | STAGE_SHOWDOWN
+        | STAGE_DEALER_TURN
+        | STAGE_DONE;
         deck: Card[];
         handInfo: HandInfo;
         history: HistoryItem[];
