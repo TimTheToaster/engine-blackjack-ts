@@ -145,6 +145,7 @@ declare module 'engine-blackjack-ts' {
         dealerHoleCard: Card | null;
         dealerHasBlackjack: boolean;
         dealerHasBusted: boolean;
+        dealerValue: HandValue;
         cardCount: number;
     }
 

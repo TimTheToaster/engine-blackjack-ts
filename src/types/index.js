@@ -76,5 +76,6 @@ export type State = {
   dealerCards: Array<Card>,
   dealerHoleCard: ?Card,
   dealerHasBlackjack: boolean,
-  dealerHasBusted: boolean
+  dealerHasBusted: boolean,
+  dealerValue: HandValue,
 }
